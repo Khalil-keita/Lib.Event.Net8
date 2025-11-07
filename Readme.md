@@ -21,10 +21,10 @@ Une bibliothèque .NET robuste et prête à l'emploi pour implémenter le patter
 var builder = WebApplication.CreateBuilder(args);
 
 // Configuration de base
-builder.Services.AddEventDrivenArchitecture();
+builder.Services.AddEvent();
 
 // Configuration avancée
-builder.Services.AddEventDrivenArchitecture(options =>
+builder.Services.AddEvent(options =>
 {
     options.AutoRegisterListeners = true;
     options.ContinueOnError = true;
