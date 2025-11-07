@@ -12,7 +12,7 @@ public static class ServiceCollectionExtensions
     /// <summary>
     /// Enregistre le système d'événements avec discovery automatique des écouteurs
     /// </summary>
-    public static IServiceCollection AddEventDrivenArchitecture(this IServiceCollection services, Action<EventOptions>? configureOptions = null)
+    public static IServiceCollection AddEvent(this IServiceCollection services, Action<EventOptions>? configureOptions = null)
     {
         var options = new EventOptions();
         configureOptions?.Invoke(options);
