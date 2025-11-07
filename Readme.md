@@ -4,14 +4,14 @@ Une bibliothèque .NET robuste et prête à l'emploi pour implémenter le patter
 
 ## 🚀 Fonctionnalités
 
-- ✅ **Dispatcher d'événements avec support DI natif
-- ✅ **Découverte automatique des écouteurs via reflection
-- ✅ **Gestion d'erreurs configurable (continue ou fail-fast)
-- ✅ **Logging structuré avec ILogger intégré
-- ✅ **Tracing et métriques avec System.Diagnostics.Activity
-- ✅ **Thread-safe grâce aux collections concurrentes
-- ✅ **Asynchrone complet avec support CancellationToken
-- ✅ **Extensible via options de configuration
+- ✅ Dispatcher d'événements avec support DI natif
+- ✅ Découverte automatique des écouteurs via reflection
+- ✅ Gestion d'erreurs configurable (continue ou fail-fast)
+- ✅ Logging structuré avec ILogger intégré
+- ✅ Tracing et métriques avec System.Diagnostics.Activity
+- ✅ Thread-safe grâce aux collections concurrentes
+- ✅ Asynchrone complet avec support CancellationToken
+- ✅ Extensible via options de configuration
 
 ## Configurations
 
@@ -135,14 +135,12 @@ public interface IEventDispatcher
 ```
 
 ### Options de Configuration 
-```Markdown
 | Option                | Description                                       | Défaut                         |
 |------------------------|---------------------------------------------------|---------------------------------|
 | AutoRegisterListeners  | Découverte automatique des écouteurs              | true                            |
 | ContinueOnError        | Continue en cas d'erreur dans un écouteur         | true                            |
 | AssembliesToScan       | Assemblies à scanner pour les écouteurs           | Assembly.GetEntryAssembly()     |
 
-```
 
 ###  Logging et Diagnostic
 ```log
