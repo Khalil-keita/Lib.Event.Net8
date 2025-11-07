@@ -21,7 +21,7 @@ Une bibliothèque .NET robuste et prête à l'emploi pour implémenter le patter
 var builder = WebApplication.CreateBuilder(args);
 
 // Configuration de base
-builder.Services.AddEventDrivenArchitecture();
+builder.Services.AddEvent();
 
 // Configuration avancée
 builder.Services.AddEvent(options =>
