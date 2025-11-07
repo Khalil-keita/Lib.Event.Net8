@@ -24,7 +24,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEventDrivenArchitecture();
 
 // Configuration avancée
-builder.Services.AddEventDrivenArchitecture(options =>
+builder.Services.AddEvent(options =>
 {
     options.AutoRegisterListeners = true;
     options.ContinueOnError = true;
